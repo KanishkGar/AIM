@@ -74,3 +74,67 @@ function ChangeButtonText(){
         $("#play-pause").html('Play');
     }
 }
+
+var currentFrame2 = $('#currentFrame2');
+var video2 = VideoFrame({
+    id : 'video2',
+    frameRate: 29.97,
+    callback : function(frame) {
+        // const unique = new Set();
+        // let i = frame;
+        // console.log(i);
+        // for(; i >= 0 && i > frame - 10; i--)
+        //     unique.add(pred1[frame]);
+        // console.log(i);
+        // currentFrame.html(Array.from(unique).join('\n'));
+        currentFrame2.html(pred2[frame]);
+    }
+});
+
+$('#play-pause2').click(function(){
+    ChangeButtonText2();
+});
+
+function ChangeButtonText2(){
+  if(video2.video.paused){
+        video2.video.play();
+        video2.listen('frame2');
+        $("#play-pause2").html('Pause');
+    }else{
+        video2.video.pause();
+        video2.stopListen();
+        $("#play-pause2").html('Play');
+    }
+}
+
+var currentFrame3 = $('#currentFrame3');
+var video3 = VideoFrame({
+    id : 'video3',
+    frameRate: 29.97,
+    callback : function(frame) {
+        // const unique = new Set();
+        // let i = frame;
+        // console.log(i);
+        // for(; i >= 0 && i > frame - 10; i--)
+        //     unique.add(pred1[frame]);
+        // console.log(i);
+        // currentFrame.html(Array.from(unique).join('\n'));
+        currentFrame3.html(pred2[frame]);
+    }
+});
+
+$('#play-pause3').click(function(){
+    ChangeButtonText3();
+});
+
+function ChangeButtonText3(){
+  if(video3.video.paused){
+        video3.video.play();
+        video3.listen('frame3');
+        $("#play-pause3").html('Pause');
+    }else{
+        video3.video.pause();
+        video3.stopListen();
+        $("#play-pause3").html('Play');
+    }
+}
