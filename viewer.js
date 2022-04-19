@@ -46,7 +46,7 @@ var pred3 = ["player moves towards net","player moves towards net","player moves
 var currentFrame = $('#currentFrame');
 var video = VideoFrame({
     id : 'video',
-    frameRate: 29.97,
+    frameRate: 24,
     callback : function(frame) {
         // const unique = new Set();
         // let i = frame;
@@ -78,7 +78,7 @@ function ChangeButtonText(){
 var currentFrame2 = $('#currentFrame2');
 var video2 = VideoFrame({
     id : 'video2',
-    frameRate: 29.97,
+    frameRate: 24,
     callback : function(frame) {
         // const unique = new Set();
         // let i = frame;
@@ -110,7 +110,7 @@ function ChangeButtonText2(){
 var currentFrame3 = $('#currentFrame3');
 var video3 = VideoFrame({
     id : 'video3',
-    frameRate: 29.97,
+    frameRate: 24,
     callback : function(frame) {
         // const unique = new Set();
         // let i = frame;
