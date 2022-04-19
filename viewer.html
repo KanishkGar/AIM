@@ -16,13 +16,14 @@
         <span class="navbar-brand mb-0 h1">Commentary Generation</span>
     </nav>
     <div class="container">
-        <div class="col-6">
+        <div class="col-11">
 
             <script src="https://rawgit.com/allensarkisyan/VideoFrame/master/VideoFrame.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-            <video height="240" width="360" id="video">
-            <source src="v_00HRwkvvjtQ_c011.webm"></source>
+            <video height="720" width="1080" id="video">
+                <!-- video 1: -->
+            <source src="https://cdn.has-cool.pics/AIkmc.webm"></source>
             </video>
 
             <div id="controls">
@@ -32,12 +33,13 @@
             <!-- <video controls autoplay width="500">
                 <source src="output.webm" type="video/webm">
             </video> -->
-        </div>
-        <div class="col-6">
             <div class="frame">  
                 <p id="currentFrame">0</p>
             </div>
         </div>
+        <!-- <div class="col-1">
+            <p>Hello</p>
+        </div> -->
     </div>
 <script src="./viewer.js" type="module"></script>
 </body>
